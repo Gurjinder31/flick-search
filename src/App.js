@@ -7,6 +7,7 @@ import ModalPopUp from './ModalPopUp';
 const App = () => {
 
   let textInput = useRef();
+  let imgrf = useRef();
   const [data, setData] = useState([])
   const [tag, setTag] = useState("")
   const [open, setOpen] = useState(false);
@@ -31,6 +32,7 @@ const App = () => {
   }
 
   const handleShowDialog = (e) => {
+    setOpen(!open);
     setImageSrc(e.target.src);
   }
 
@@ -57,7 +59,7 @@ const App = () => {
         {
           data.map(list => (
             <div className="list-images" >
-              <img onClick={handleShowDialog} className="list-img" src={`${photoUrl}${list.server}/${list.id}_${list.secret}.jpg`} alt={list.name} />
+              <img ref={imgrf} onClick={handleShowDialog} className="list-img" src={`${photoUrl}${list.server}/${list.id}_${list.secret}.jpg`} alt={list.name} />
             </div>
           )
           )

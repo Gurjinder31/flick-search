@@ -19,20 +19,11 @@ const ModalPopUp = ({ url, open, setOpen }) => {
             height: imgRef.current.clientHeight,
             width: imgRef.current.clientWidth,
         })
-
-
-
-        //     <p><strong>Height : </strong>
-        //         {height}</p>
-
-        //     <p><strong>Width : </strong>
-        //         {width}</p>
-
-        // </div>
     }
 
 
     return (
+
         <div className="imgDiv">
             <img ref={imgRef} onLoad={getImgDetails} className="Modal-img" src={url} alt="testing" />
             <div className="Modal-cross" onClick={() => setOpen(!open)}>
