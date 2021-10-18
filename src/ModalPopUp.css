@@ -1,0 +1,38 @@
+.Modal-img {
+  position: fixed;
+  background: rgba(71, 69, 69, 0.7);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 50%;
+  border-radius: 18px;
+}
+
+.imgDiv {
+  position: fixed;
+  background: rgba(71, 69, 69, 0.7);
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+.Modal-cross {
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  cursor: pointer;
+  color: rgb(75, 75, 75);
+  /* transform: translate(-50%, -50%); */
+  font-size: 40px;
+  font-weight: bold;
+}
+.img-details {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  color: white;
+}
